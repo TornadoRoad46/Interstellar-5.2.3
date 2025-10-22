@@ -14,7 +14,7 @@ if (
   const popup = open("about:blank", "_blank");
   if (!popup || popup.closed) {
     alert(
-      "Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.",
+      "(Optional) Please allow popups for this site! It blocks certain extensions and won't show up in history.",
     );
   } else {
     const doc = popup.document;
@@ -173,15 +173,12 @@ document.addEventListener("DOMContentLoaded", event => {
 // Splash texts
 const SplashT = [
   "Hello everyone, this is Daniel Larson.",
-  "New phone law is straight buns",
-  "Last Updated 8/13/2025",
-  "Don't do something stupid on here.",
-  "No spreading links around.",
-  "I wish I changed colors.. like a salamander!",
-  "YO GUYS, IT'S MORGZ",
-  "WE FINNA GET PAID",
+  "I know you're a furry, Ezra.",
+  "Last Updated 10/22/2025",
+  "i loooveeee chocolate",
   "I just roke up",
-  "Anyone wanna play 8 ball pool? Hello?",
+  "Anyone wanna play 8 ball pool?",
+  "Copsey is always watching.",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
@@ -198,19 +195,14 @@ SplashE.addEventListener("click", US);
 // Random URL
 function getRandomUrl() {
   const randomUrls = [
-    "https://kahoot.it",
     "https://classroom.google.com",
     "https://drive.google.com",
     "https://google.com",
     "https://docs.google.com",
     "https://slides.google.com",
-    "https://www.nasa.gov",
-    "https://blooket.com",
     "https://clever.com",
-    "https://edpuzzle.com",
     "https://khanacademy.org",
     "https://wikipedia.org",
-    "https://dictionary.com",
   ];
   return randomUrls[randRange(0, randomUrls.length)];
 }
